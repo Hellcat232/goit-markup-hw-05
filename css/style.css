@@ -548,9 +548,43 @@ a {
   min-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .close-button{} */
+.modal-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #404bbf;
+  border: none;
+}
+.close-button {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-button:hover,
+.close-button:focus {
+  fill: #ffffff;
+}
 .container-modal-forms {
+  padding: 72px 24px 24px 24px;
+}
+/* .container-modal-forms {
   width: 360px;
   display: flex;
   flex-direction: column;
@@ -558,15 +592,20 @@ a {
   justify-content: center;
   margin-left: 24px;
   flex-wrap: wrap;
-}
+} */
 .modal-title {
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
+  text-align: center;
+  color: #2e2f42;
+}
+.input-container {
+  margin-bottom: 8px;
 }
 .form-modal {
   display: flex;
@@ -581,15 +620,38 @@ a {
   font-size: 12px;
   font-style: normal;
   color: #8e8f99;
-  line-height: 14px; /* 116.667% */
-  letter-spacing: 0.48px;
+  line-height: 1.17; /* 116.667% */
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
+}
+.modal-icons {
+  position: relative;
 }
 .form-input {
   width: 100%;
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-input:focus {
+  border-color: #4d5ae5;
+}
+.modal-svg {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* .modal-svg:hover .form-input:active .form-input:focus {
+  fill: #4d5ae5;
+} */
 textarea {
   resize: none;
   height: 120px;
