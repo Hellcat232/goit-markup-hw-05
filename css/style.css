@@ -727,6 +727,12 @@ a {
 .checkbox-a {
   color: #4d5ae5;
 }
+.checkbox-input:checked + .checkbox-label span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
 .btn-submit {
   color: #ffffff;
   text-align: center;
