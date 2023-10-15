@@ -494,6 +494,9 @@ a {
   align-items: baseline;
   padding-right: 24px;
 }
+.footer-label {
+  gap: 24px;
+}
 .button-subs {
   display: inline-flex;
   padding: 8px 24px;
@@ -504,6 +507,11 @@ a {
   background-color: #4d5ae5;
   color: #ffffff;
   text-align: center;
+  min-width: 165px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
   border: none;
   background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -514,20 +522,31 @@ a {
   background-color: #31d0aa;
 }
 .email {
-  border-radius: 4px;
-  border: 1px solid var(--WHITE, #fff);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 264px;
   height: 40px;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
   margin-right: 24px;
   background-color: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: #ffffff;
 }
 .subscribe-title {
-  display: block;
   color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
 .sub-icon {
   fill: #ffffff;
+  margin-left: 16px;
 }
 .modal {
   background: rgba(46, 47, 66, 0.4);
@@ -725,4 +744,9 @@ a {
   height: 56px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
