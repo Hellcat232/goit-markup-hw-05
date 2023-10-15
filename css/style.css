@@ -493,10 +493,11 @@ a {
   display: inline-flex;
   align-items: baseline;
   padding-right: 24px;
-}
-.footer-label {
   gap: 24px;
 }
+/* .footer-label {
+  
+} */
 .button-subs {
   display: inline-flex;
   padding: 8px 24px;
@@ -597,9 +598,12 @@ a {
 .close-button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-button:hover,
-.close-button:focus {
+
+/* .close-button:hover {
   fill: #ffffff;
+} */
+.modal-close-btn:focus-within + .close-button {
+  fill: #fff;
 }
 /* .container-modal-forms {
   padding: 72px 24px 24px 24px;
@@ -726,7 +730,7 @@ a {
 .btn-submit {
   color: #ffffff;
   text-align: center;
-  font-family: Roboto sans-serif;
+  font-family: "Roboto" sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
